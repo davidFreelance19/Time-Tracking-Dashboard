@@ -1,0 +1,25 @@
+@use '../abstracts/colors' as color;
+@use '../abstracts/fonts' as fonts;
+@use '../abstracts/typography' as tphy;
+body{
+    font-family: fonts.$font-family;
+    background: color.$bg-body;
+}
+html {
+    /* Para utilizar 1rem = 10px */
+    font-size: 62.5%;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.attribution{
+    color: #fff;
+}
+.attribution a{
+    color: color.$bg-top-work;
+}

@@ -1,0 +1,18 @@
+@use './fonts' as fonts;
+@use './colors' as colors;
+p{
+    font-weight: fonts.$font-light;
+    color: colors.$text-color-p;
+}
+.name, .horas , .typography{
+    color: #fff;
+}
+.name, .horas{
+    font-weight: fonts.$font-medium;
+}
+.tilte, .typography{
+    font-weight: fonts.$font-normal;
+}
+.attribution a{
+    color: colors.$bg-top-work;
+}
