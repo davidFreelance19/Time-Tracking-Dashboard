@@ -1,17 +1,26 @@
-p {
-  font-weight: 300;
+p, a {
+  font-size: 1.4rem;
   color: hsl(236deg, 100%, 87%);
 }
 
-.name, .horas, .typography {
+@media (min-width: 1440px) {
+  p {
+    font-size: 1.6rem;
+  }
+}
+.name, .horas, .title {
   color: #fff;
 }
 
-.name, .horas {
+.horas, p, a {
+  font-weight: 300;
+}
+
+.name {
   font-weight: 400;
 }
 
-.tilte, .typography {
+.title {
   font-weight: 500;
 }
 
@@ -19,6 +28,37 @@ p {
   color: hsl(15deg, 100%, 70%);
 }
 
+.name {
+  font-size: 2.4rem;
+}
+
+@media (min-width: 1440px) {
+  .name {
+    font-size: 3.7rem;
+  }
+  a {
+    font-size: 1.6rem;
+  }
+}
+.title {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 1440px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+.horas {
+  font-size: 3rem;
+}
+
+@media (min-width: 1440px) {
+  .horas {
+    font-size: 5rem;
+    padding-top: 1rem;
+  }
+}
 /* Document
  * ========================================================================== */
 /**
@@ -405,6 +445,20 @@ body {
   background: hsl(226deg, 43%, 10%);
 }
 
+@media (min-width: 1440px) {
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 375px) {
+  .dashboard {
+    padding-top: 2rem;
+    gap: 0;
+  }
+}
 html {
   /* Para utilizar 1rem = 10px */
   font-size: 62.5%;
@@ -424,20 +478,217 @@ html {
   color: #fff;
 }
 
-.attribution a {
-  color: hsl(15deg, 100%, 70%);
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 20%;
+}
+
+.hover:hover {
+  background-color: hsl(235deg, 45%, 61%);
+}
+
+.perfil__routine a:hover {
+  cursor: pointer;
+  color: #fff;
+  font-weight: normal;
+}
+
+.margin-auto {
+  margin: 0 auto;
 }
 
 .border-all {
-  border-radius: 20px;
+  border-radius: 1rem;
 }
 
 .border-top {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
 }
 
 .border-bottom {
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem 2.5rem;
+  gap: 2rem;
+}
+
+@media (min-width: 1440px) {
+  .perfil__info {
+    display: block;
+  }
+}
+.bg-card {
+  background-color: hsl(235deg, 46%, 20%);
+}
+
+.bg-card, .bg-blue {
+  position: relative;
+}
+
+.z-index {
+  z-index: 1;
+}
+
+.bg-blue {
+  background-color: hsl(246deg, 80%, 60%);
+}
+
+.absolute {
+  top: 0;
+  left: 0;
+}
+
+.space-beetween {
+  justify-content: space-between;
+}
+
+.work {
+  background-color: hsl(15deg, 100%, 70%);
+}
+
+.elipses {
+  width: 10%;
+}
+
+.padding-top {
+  padding: 3rem 2.5rem 0.5rem 2.5rem;
+}
+
+.padding-bottom {
+  padding: 0.5rem 2.5rem 3rem 2.5rem;
+}
+
+.play {
+  background-color: hsl(195deg, 74%, 62%);
+}
+
+.study {
+  background-color: hsl(348deg, 100%, 68%);
+}
+
+.exercise {
+  background-color: hsl(145deg, 58%, 55%);
+}
+
+.social {
+  background-color: hsl(264deg, 64%, 52%);
+}
+
+.self-care {
+  background-color: hsl(43deg, 84%, 65%);
+}
+
+.dashboard {
+  display: grid;
+  grid-template-rows: 14% 86%;
+  gap: 2rem;
+  width: 85%;
+  padding: 1rem 0;
+}
+
+@media (min-width: 375px) {
+  .dashboard {
+    padding-top: 3rem;
+    gap: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .dashboard {
+    grid-template-rows: unset;
+    grid-template-columns: 24% 76%;
+    width: 70%;
+    gap: 3rem;
+    height: 60%;
+  }
+}
+@media (min-width: 1440px) {
+  .estadisticas__card {
+    max-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+  .padding-bottom {
+    display: block;
+  }
+  .perfil {
+    display: grid;
+    height: 97%;
+  }
+  .daily p {
+    margin-top: 0.5rem;
+  }
+}
+.perfil__routine {
+  top: -2rem;
+}
+.perfil__routine div {
+  padding-top: 2rem;
+  margin: 0 auto;
+}
+
+.card__info {
+  top: -3rem;
+}
+
+.card__bg-top {
+  overflow: hidden;
+}
+
+.card__bg-top img {
+  margin-top: -0.8rem;
+  margin-left: 25rem;
+}
+
+@media (min-width: 1440px) {
+  .card__bg-top img {
+    width: 30%;
+    margin-left: 17rem;
+  }
+}
+@media (min-width: 1440px) {
+  .card__info {
+    padding: 0;
+    margin: 0;
+  }
+  .estadisticas__card div {
+    position: relative;
+  }
+  .estadisticas__card .z-index {
+    top: -2rem;
+  }
+}
+.social img {
+  margin-top: -2.6rem;
+}
+
+.exercise img {
+  margin-top: 2rem;
+}
+
+@media (min-width: 1440px) {
+  .perfil__info img {
+    padding-top: 3rem;
+    width: 35%;
+  }
+  .perfil__info div {
+    padding: 4rem 0;
+  }
+}
+@media (min-width: 1440px) {
+  .perfil__routine {
+    margin: 0.5rem 0;
+    display: block;
+  }
 }

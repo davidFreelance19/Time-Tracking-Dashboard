@@ -1,11 +1,75 @@
+@use '../abstracts/colors' as colors;
+@use '../abstracts/mixins' as m;
+.margin-auto{
+    margin: 0 auto;
+}
 .border-all{
-    border-radius: 20px;
+    border-radius: 1rem;
 }
 .border-top{
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 .border-bottom{
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.flex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem 2.5rem;
+    gap: 2rem;
+}
+@include m.desktop {
+    .perfil__info{
+        display: block;
+    }
+}
+.bg-card{
+    background-color: colors.$bg-card;
+}
+.bg-card, .bg-blue{
+    position: relative;
+}
+.z-index{
+    z-index: 1;
+}
+.bg-blue{
+    background-color: colors.$bg-photo;
+}
+.absolute{
+    top: 0;
+    left: 0;
+}
+.space-beetween{
+    justify-content: space-between;
+}
+.work{
+    
+    background-color: colors.$bg-top-work;
+}
+.elipses{
+    width: 10%;
+}
+.padding-top{
+    padding: 3rem 2.5rem .5rem 2.5rem;
+}
+.padding-bottom{
+    padding: .5rem 2.5rem 3rem 2.5rem;
+}
+.play{
+    background-color: colors.$bg-top-play;
+}
+.study{
+    background-color: colors.$bg-top-study;
+}
+.exercise{
+    background-color: colors.$bg-top-exercise;
+}
+.social{
+    background-color: colors.$bg-top-social;
+}
+.self-care{
+    background-color: colors.$bg-top-self-care;
 }

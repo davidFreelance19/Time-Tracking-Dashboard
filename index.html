@@ -12,14 +12,144 @@
   <link rel="stylesheet" href="build/css/app.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 13px; text-align: center; font-weight: 500;}
+    .attribution { font-size: 13px; text-align: center;}
   </style>
 </head>
 <body>
-  <h2 class="name">Gola</h2>
-  <div class="attribution">
+  <section class="dashboard margin-auto">
+    <section class="perfil">
+
+      <div class="perfil__info bg-blue z-index margin-auto flex border-all">
+        <img src="src/images/image-jeremy.png" alt="img-persona" class="image-persona">
+        <div>
+          <p>Report for</p>
+          <h2 class="name">Jeremy Robson</h2>
+        </div>
+      </div>
+
+      <div class="perfil__routine margin-auto bg-card flex border-bottom">
+        <div class="daily"><a href="#">Daily</a></div>
+        <div class="weekly"><a href="#">Weekly</a></div>
+        <div class="montly"><a href="#">Monthly</a></div>
+      </div>
+
+    </section>
+
+    <section class="estadisticas grid">
+
+      <div class="estadisticas__card">
+
+        <div>
+          <div class="card__bg-top work bg-top bg-blue border-all">
+            <img src="src/images/icon-work.svg" alt="icon">
+          </div>
+
+          <div class="card__info hover bg-card z-index border-all">
+            <div class="flex space-beetween padding-top">
+              <h3 class="title">Work</h3>
+              <img src="src/images/icon-ellipsis.svg" alt="img-elipses" class="elipses">
+            </div>
+            <div class="flex  space-beetween padding-bottom">
+              <h3 class="horas">32hrs</h3>
+              <p>Last Week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+
+                
+        <div>
+          <div class="card__bg-top play bg-top bg-blue border-all">
+            <img src="src/images/icon-play.svg" alt="icon">
+          </div>
+
+          <div class="card__info hover bg-card z-index border-all">
+            <div class="flex space-beetween padding-top">
+              <h3 class="title">Play</h3>
+              <img src="src/images/icon-ellipsis.svg" alt="img-elipses" class="elipses">
+            </div>
+            <div class="flex  space-beetween padding-bottom">
+              <h3 class="horas">10hrs</h3>
+              <p>Last Week - 8hrs</p>
+            </div>
+          </div>
+        </div>
+                
+        <div>
+          <div class="card__bg-top study bg-top bg-blue border-all">
+            <img src="src/images/icon-study.svg" alt="icon">
+          </div>
+
+          <div class="card__info hover bg-card z-index border-all">
+            <div class="flex space-beetween padding-top">
+              <h3 class="title">Study</h3>
+              <img src="src/images/icon-ellipsis.svg" alt="img-elipses" class="elipses">
+            </div>
+            <div class="flex  space-beetween padding-bottom">
+              <h3 class="horas">4hrs</h3>
+              <p>Last Week - 5hrs</p>
+            </div>
+          </div>
+        </div>
+                
+        <div class="z-index">
+          <div class="card__bg-top exercise bg-top bg-blue border-all">
+            <img src="src/images/icon-exercise.svg" alt="icon">
+          </div>
+
+          <div class="card__info hover bg-card z-index border-all">
+            <div class="flex space-beetween padding-top">
+              <h3 class="title">Excersice</h3>
+              <img src="src/images/icon-ellipsis.svg" alt="img-elipses" class="elipses">
+            </div>
+            <div class="flex  space-beetween padding-bottom">
+              <h3 class="horas">4hrs</h3>
+              <p>Last Week - 5hrs</p>
+            </div>
+          </div>
+        </div>
+                
+        <div class="z-index">
+          <div class="card__bg-top social bg-top bg-blue border-all">
+            <img src="src/images/icon-social.svg" alt="icon">
+          </div>
+
+          <div class="card__info hover bg-card z-index border-all">
+            <div class="flex space-beetween padding-top">
+              <h3 class="title">Social</h3>
+              <img src="src/images/icon-ellipsis.svg" alt="img-elipses" class="elipses">
+            </div>
+            <div class="flex  space-beetween padding-bottom">
+              <h3 class="horas">5hrs</h3>
+              <p>Last Week - 10hrs</p>
+            </div>
+          </div>
+        </div>
+                
+        <div class="z-index">
+          <div class="card__bg-top self-care bg-top bg-blue border-all">
+            <img src="src/images/icon-self-care.svg" alt="icon">
+          </div>
+
+          <div class="card__info hover bg-card z-index border-all">
+            <div class="flex space-beetween padding-top">
+              <h3 class="title">Self-Care</h3>
+              <img src="src/images/icon-ellipsis.svg" alt="img-elipses" class="elipses">
+            </div>
+            <div class="flex  space-beetween padding-bottom">
+              <h3 class="horas">2hrs</h3>
+              <p>Last Week - 2hrs</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+
+  </section>
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.instagram.com/dev_rodbd/">David Rodriguez Badillo</a>.
-  </div>
+  </div> -->
 </body>
 </html>

@@ -1,9 +1,24 @@
 @use '../abstracts/colors' as color;
 @use '../abstracts/fonts' as fonts;
 @use '../abstracts/typography' as tphy;
+@use '../abstracts/mixins' as m;
 body{
     font-family: fonts.$font-family;
     background: color.$bg-body;
+}
+@include m.desktop {
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@include m.phone {
+    .dashboard{
+        padding-top: 2rem;
+        gap: 0;
+    }
 }
 html {
     /* Para utilizar 1rem = 10px */
@@ -20,6 +35,17 @@ html {
 .attribution{
     color: #fff;
 }
-.attribution a{
-    color: color.$bg-top-work;
+a{
+    text-decoration: none;
+}
+img{
+    width: 20%;
+}
+.hover:hover{
+    background-color: color.$bg-card-hover;
+}
+.perfil__routine a:hover{
+    cursor: pointer;
+    color: #fff;
+    font-weight: normal;
 }

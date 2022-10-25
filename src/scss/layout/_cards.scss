@@ -1,0 +1,65 @@
+@use '../abstracts/colors' as colors;
+@use '../abstracts/mixins' as m;
+
+.perfil__routine {
+    top: -2rem;
+    div{
+        padding-top: 2rem;
+        margin: 0 auto;
+    }
+}
+.card__info{
+    top: -3rem;
+}
+.card__bg-top{
+    overflow: hidden;
+}
+.card__bg-top img{
+    margin-top: -.8rem;
+    margin-left: 25rem;
+}
+@include m.desktop {
+    .card__bg-top img{
+        width: 30%;
+        margin-left: 17rem;
+    }
+}
+@include m.desktop{
+    .card__info{
+        padding: 0;
+        margin: 0;
+    }
+    .estadisticas__card div{
+        position: relative;
+    }
+    .estadisticas__card{
+        .z-index{
+            top: -2rem;
+        }
+    }
+}
+.social{
+    img{
+        margin-top: -2.6rem;
+    }
+}
+.exercise {
+    img{
+        margin-top: 2rem;
+    }
+}
+@include m.desktop {
+    .perfil__info img{
+        padding-top: 3rem;
+        width: 35%;
+    }
+    .perfil__info div{
+        padding: 4rem 0;
+    }
+}
+@include m.desktop {
+    .perfil__routine{
+        margin: .5rem 0;
+        display: block;
+    }
+}

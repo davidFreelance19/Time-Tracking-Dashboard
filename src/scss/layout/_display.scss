@@ -1,0 +1,42 @@
+@use '../abstracts/mixins' as m;
+.dashboard{
+    display: grid;
+    grid-template-rows: 14% 86%;
+    gap: 2rem;
+    width: 85%;
+    padding: 1rem 0;
+}
+@include m.phone {
+    .dashboard{
+        padding-top: 3rem;
+        gap: 0;
+    }
+}
+@include m.desktop {
+    .dashboard{
+        grid-template-rows: unset;
+        grid-template-columns: 24% 76%;
+        width: 70%;
+        gap: 3rem;
+        height: 60%;
+    }
+}
+@include m.desktop {
+    .estadisticas__card{
+        max-height: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+    }
+    .padding-bottom{
+        display: block;
+    }
+    .perfil{
+        display: grid;
+        height: 97%;
+    }
+    .daily p{
+        margin-top: .5rem;
+    }
+}
