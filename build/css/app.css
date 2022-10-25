@@ -8,7 +8,7 @@ p, a {
     font-size: 1.6rem;
   }
 }
-.name, .horas, .title {
+.name, .horas, .title, .default {
   color: #fff;
 }
 
@@ -453,12 +453,6 @@ body {
     justify-content: center;
   }
 }
-@media (min-width: 375px) {
-  .dashboard {
-    padding-top: 2rem;
-    gap: 0;
-  }
-}
 html {
   /* Para utilizar 1rem = 10px */
   font-size: 62.5%;
@@ -480,8 +474,14 @@ html {
 
 a {
   text-decoration: none;
+  padding-top: 2rem;
 }
 
+@media (min-width: 1440px) {
+  a {
+    display: block;
+  }
+}
 img {
   width: 20%;
 }
