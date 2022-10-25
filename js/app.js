@@ -3,6 +3,7 @@ const hrs = document.querySelectorAll('.work-horas');
 const last =  document.querySelectorAll('.card__info p');
 
 divInfo.addEventListener('click', e => {
+    
     let parametro;
     if(e.target && e.target.tagName === 'A'){
         switch( e.target.textContent ){
@@ -28,21 +29,15 @@ divInfo.addEventListener('click', e => {
 
 function mapeo(resultado, parametro){
     if(parametro === 'Daily'){
-        let array = resultado.map((datos) =>{
-        return datos.timeframes.daily 
-      });
+        let array = resultado.map(datos => datos.timeframes.daily );
       generarHTML(array, parametro)
 
    }else if(parametro === 'Weekly'){
-    let array = resultado.map((datos) =>{
-        return datos.timeframes.weekly
-      });
+    let array = resultado.map(datos => datos.timeframes.weekly);
       generarHTML(array, parametro)
       
    }else{
-    let array = resultado.map((datos) =>{
-        return datos.timeframes.monthly
-      });
+    let array = resultado.map(datos => datos.timeframes.monthly);
       generarHTML(array, parametro)
    }
 }
